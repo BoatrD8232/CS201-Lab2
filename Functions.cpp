@@ -96,6 +96,9 @@ int deciToBin() {
 		cout << "Not a decimal number." << endl;
 		return -1;
 	}
+	if (deci == 0) {
+		binary = '0' + binary;
+	}
 	while (deci > 0) {
 		binary = to_string(deci % 2) + binary;
 		deci /= 2;
